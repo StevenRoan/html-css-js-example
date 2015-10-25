@@ -14,7 +14,7 @@ app.post('/public/data.json', function (req, res, next) {
   } catch (e) {
     var data = [];
   }
-
+  console.log('get data %j', req.body);
   data.push(req.body);
   fs.writeFileSync(path, JSON.stringify(data));
 });
