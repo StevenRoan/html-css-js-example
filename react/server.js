@@ -4,14 +4,21 @@ var bodyParser = require('body-parser');
 var app = express();
 app.use(express.static('./'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended:true}));
-app.post('/public/data.json', function(req, res, next){
-  var path = __dirname+'/public/data.json';
-  var data = JSON.parse(fs.readFileSync(path, "utf8"));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.post('/public/data.json', function (req, res, next) {
+  var path = __dirname + '/public/data.json';
+  try {
+    var data = JSON.parse(fs.readFileSync(path, "utf8"));
+  } catch (e) {
+    var data = [];
+  }
+
   data.push(req.body);
   fs.writeFileSync(path, JSON.stringify(data));
 });
 var port = 3000;
-app.listen(port, function (){
+app.listen(port, function () {
   console.log("server listen in port %s", port);
 });
