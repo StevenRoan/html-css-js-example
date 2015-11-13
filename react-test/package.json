@@ -11,7 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3"
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "install": "^0.3.0",
+    "react": "file:react",
+    "react-dom": "^0.14.2"
   },
   "devDependencies": {
     "babel-core": "^5.8.29",
