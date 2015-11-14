@@ -45,13 +45,12 @@ var CommentBox = React.createClass({
   },
   componentDidMount: function () {
     this.loadCommentsFromServer();
-    console.log('hihi')
     // setInterval(this.loadCommentsFromServer, this.props.pollInterval);
   },
   render: function () {
     return (
       <div className = "commentBox">
-        <h1>Comment Box</h1>
+        <h1>Comment Box5</h1>
         <CommentList data={this.state.data}/>
         <CommentForm onCommentSubmit={this.handleCommentSubmit}/>
       </div>
