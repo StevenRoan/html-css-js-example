@@ -1,5 +1,15 @@
 module.exports = {
-  entry: "./src/index.jsx",
+  devServer: {
+    publicPath: "/build",
+    watchOptions: {
+      aggregateTimeout: 300,
+      poll: 600
+    },
+    hot: true
+  },
+  entry: {
+    app: ["./src/index.jsx"],
+  },
   output: {
     path: __dirname + '/build',
     filename: "index.js"
