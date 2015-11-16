@@ -1,6 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-
+var io = require('socket.io-client');
+var socket = io("http://127.0.0.1:3001");
 var CommentBox = React.createClass({
   loadCommentsFromServer: function () {
     $.ajax({
@@ -50,7 +51,7 @@ var CommentBox = React.createClass({
   render: function () {
     return (
       <div className = "commentBox">
-        <h1>Comment Box14</h1>
+        <h1>Comment Box20</h1>
         <CommentList data={this.state.data}/>
         <CommentForm onCommentSubmit={this.handleCommentSubmit}/>
       </div>
