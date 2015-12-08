@@ -7,6 +7,10 @@
  * `meteor remove inscure`: remove inscure method to prevent from modifying server data directly
  * `meteor remove autopublish`: Server has to explicitly set the data
 
+### Meteor File Structure
+* [Document](http://docs.meteor.com/#/basic/filestructure)
+
+
 ### Specialty
 * [optimistic ui](https://www.meteor.com/tutorials/blaze/security-with-methods#optimisticui):
  * Looks the app like realtime (No round trip time)
