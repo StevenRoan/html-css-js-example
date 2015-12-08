@@ -26,3 +26,5 @@
  * Template.task.event: set CSS selector and related event
 * Session
  * `Session` keeps global state of this page
+
+# Publish annd subscribe
