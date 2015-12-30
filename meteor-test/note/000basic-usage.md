@@ -18,10 +18,10 @@
 
 ### Pure Meteor
 #### .html
-* `{{syntax}}`: logic or embed.
- * `{{>task}}`: Embed template `task`.
- * Example: `{{#each tasks}}`...`{{/each}}: iterate all the result of helper function `tasks`. `tasks` needs to return an array.
- * Example: `{{#if isOwner}}...{{/if}}: : if else. helper function, `isOwner` must return bool.
+* `\{\{syntax\}\}`: logic or embed.
+ * `\{\{>task\}\}`: Embed template `task`.
+ * Example: `\{\{#each tasks\}\}...\{\{/each\}]}`: iterate all the result of helper function `tasks`. `tasks` needs to return an array.
+ * Example: `\{\{#if isOwner\}\}...\{\{/if\}\}`: if else. helper function, `isOwner` must return bool.
 
 #### .js
 * Template

@@ -1,3 +1,3 @@
 # web-frontend
-* react
- * Transform the jsx in real time `babel src --watch --out-dir build`
+ * A repository to aggregate my web frontend knowledge
+`gitbook serve` can open the gitbook server
