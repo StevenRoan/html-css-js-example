@@ -1,5 +1,5 @@
 * {
-    border: 1px solid red !important;
+    border: 2px solid red !important;
 }
 
 * {
@@ -8,6 +8,21 @@
     -ms-box-sizing:  border-box;
     box-sizing: border-box;
 }
+ /*block DOM + inline DOM*/
+.block1{
+  float: inline;
+}
+.block2{
+  /*float: left;*/
+}
+
+.block3{
+  /*float: left;*/
+}
+.inline1{
+  /*float: left;*/
+}
+
 
 .grid {
     margin: 0 auto;
@@ -16,7 +31,7 @@
 }
 
 .grid2 {
-    display: flex;
+    display: block;
 }
 .row {
     width: 100%;

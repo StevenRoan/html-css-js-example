@@ -29,7 +29,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch(['./app/*.html'], ['html']);
+    gulp.watch(['./app/*.html', './app/**/*.html'], ['html']);
     gulp.watch(['./app/js/*.js'], ['js']);
     gulp.watch(['./app/styles/*.css', './app/framework/**/*.css'], ['css']);
 });
