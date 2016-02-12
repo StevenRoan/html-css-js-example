@@ -39,3 +39,6 @@ two kinds of element. (inline 內聯元素) (block 塊級元素)
   * `<h1>~<h6>, <div>, <hr>`
   * 除了inline mode 的性質之外，當瀏覽器關渡減少時還會自動擴充**height**
   * if using `width` in `block element`, the horizontal scroll shows up when the width is too short. If no `width` property, the width of block will be shorter.
+
+### Concept
+css 是賦予html屬性，所以css 比較像是html的附屬
