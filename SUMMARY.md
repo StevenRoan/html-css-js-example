@@ -5,3 +5,4 @@
 * [D3.js](d3/note/index.md)
 * [Html-CSS-basics](html-css-basic/doc/000html-css.md)
 * [CSS3](css/note/index.md)
+* [babel](babel-example/doc/index.md)
